@@ -32,3 +32,4 @@ public class AudioManager : MonoBehaviour
     {
         audioSource.volume = 0f;
     }
+}
