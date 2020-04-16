@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657928, g: 0.4964131, b: 0.5748174, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657958, g: 0.49641377, b: 0.5748177, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -232,7 +232,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fe16240eaf5d8041abe0fc4b8957467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cube: {fileID: 1326981423}
 --- !u!4 &67433260 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6863143103735141460, guid: 0981a0fe428dfc14bbaf30c3652d289f,
@@ -3035,7 +3034,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fe16240eaf5d8041abe0fc4b8957467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cube: {fileID: 1604694713}
 --- !u!1 &1249158343
 GameObject:
   m_ObjectHideFlags: 0
@@ -3272,12 +3270,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1373697905}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627f115edfb43a84d9fcb4395a79942a, type: 3}
+  m_Script: {fileID: 11500000, guid: 70a7faf8edbc2bd41ac7b53bf9cc8846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  countText: {fileID: 520311867}
-  winText: {fileID: 801374206}
+  speed: 0
 --- !u!54 &1373697911
 Rigidbody:
   m_ObjectHideFlags: 0
