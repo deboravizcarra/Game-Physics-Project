@@ -6,7 +6,8 @@ public class TrapOpen : MonoBehaviour
 {
     public GameObject Cube;
 
-        void OnTriggerEnter(){
+    void OnTriggerEnter()
+    {
         Cube.GetComponent<Animation>().Play("TrapDoorAnim");
     }
 }

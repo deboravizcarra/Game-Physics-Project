@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Fan_Rotate : MonoBehaviour
 {
-
     // Update is called once per frame
     void Update()
     {
