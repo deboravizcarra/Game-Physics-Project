@@ -15,6 +15,9 @@ public class PlayerPosition : MonoBehaviour
 
     void Update()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 }
