@@ -3,8 +3,8 @@ using System.Collections;
 
 public class Jump : MonoBehaviour {
 
-    private Rigidbody rigidbody;
-    private float jumpspeed = 5;
+    private new Rigidbody rigidbody;
+    private float jumpspeed = 2;
     
     // Use this for initailization
     void Start() {
