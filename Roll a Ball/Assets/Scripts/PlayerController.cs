@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     public float speed;
-    //public Text countText;
-    //public Text winText;
+    public Text countText;
+    public Text winText;
 
     private Rigidbody rb;
     private int count;
@@ -15,8 +16,8 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         count = 0;
-        //SetCountText();
-        //winText.text = "";
+        SetCountText();
+        winText.text = "";
     }
 
     void FixedUpdate()
@@ -35,10 +36,10 @@ public class PlayerController : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             count = count + 1;
-            //SetCountText();
+            SetCountText();
         }
     }
-/*
+
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
@@ -46,5 +47,5 @@ public class PlayerController : MonoBehaviour
         {
             winText.text = "You Win!";
         }
-    }*/
+    }
 }
