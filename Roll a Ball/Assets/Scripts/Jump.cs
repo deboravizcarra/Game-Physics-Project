@@ -4,7 +4,8 @@ using System.Collections;
 public class Jump : MonoBehaviour {
 
     private new Rigidbody rigidbody;
-    private float jumpspeed = 2;
+    public float jumpHeight;
+    public GameObject ball;
     
     // Use this for initailization
     void Start() {
@@ -13,12 +14,13 @@ public class Jump : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        // tekan space untuk Lampat
-        if (Input.GetKey(KeyCode.Space)) {
-            Vector3 atas = new Vector3(0, 10, 0);
-            rigidbody.AddForce(atas * jumpspeed);
+        // jump if left mouse click is pressed
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            GetComponent<Rigidbody>().AddForce(Vector3.up * jumpHeight);
+            //ball.transform.position = jump;
         }
-        Vector3 gerak = new Vector3 ( 0, Input.GetAxis ("Vertical"));
-        rigidbody.AddForce (gerak * jumpspeed);
+        //Vector3 gerak = new Vector3 ( 0, Input.GetAxis ("Vertical"));
+        //rigidbody.AddForce (gerak * jumpspeed);
     }
 }
