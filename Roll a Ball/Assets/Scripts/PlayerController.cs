@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -12,16 +13,20 @@ public class PlayerController : MonoBehaviour
     public Transform cam;
     Vector2 input;
 
-    public Text countText;
-    public Text winText;
+    public TextMeshProUGUI stageText;
+    public TextMeshProUGUI countText;
+    public TextMeshProUGUI winText;
 
     private Rigidbody rb;
     private int count;
+    private int stage;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         count = 0;
+        stage = 1;
+        SetStageText(stage);
         SetCountText();
         winText.text = "";
     }
@@ -61,6 +66,11 @@ public class PlayerController : MonoBehaviour
             count = count + 1;
             SetCountText();
         }
+    }
+
+    void SetStageText(int n)
+    {
+        stageText.text = "Stage: " + stage.ToString();
     }
 
     void SetCountText()
