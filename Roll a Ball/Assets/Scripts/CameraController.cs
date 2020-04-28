@@ -21,7 +21,7 @@ public class CameraController : MonoBehaviour
 
     void LateUpdate()
     {
-        if(RotateAroundPlayer)
+        if (RotateAroundPlayer)
         {
             Quaternion turnAngle = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * RotateSpeed, Vector3.up);
             offset = turnAngle * offset;

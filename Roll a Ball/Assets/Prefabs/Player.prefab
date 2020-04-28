@@ -127,6 +127,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  camPivot: {fileID: 0}
+  cam: {fileID: 0}
+  stageText: {fileID: 0}
   countText: {fileID: 0}
   winText: {fileID: 0}
 --- !u!114 &8148520086773884158
@@ -153,6 +156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8988a7a5066764a4eb6c803a1cde6de5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpHeight: 5
+  ball: {fileID: 0}
 --- !u!114 &207416952424531610
 MonoBehaviour:
   m_ObjectHideFlags: 0
