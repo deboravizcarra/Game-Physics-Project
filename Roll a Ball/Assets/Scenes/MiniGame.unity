@@ -4769,7 +4769,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0.2011682, y: -0.03239534, z: -0.109217495, w: 0.97290987}
-  m_LocalPosition: {x: 0.117927454, y: 0.4795863, z: -0.3506589}
+  m_LocalPosition: {x: -2.8, y: 1.42, z: -0.3506589}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1711425352}
@@ -7166,7 +7166,6 @@ Transform:
   - {fileID: 1909465196}
   - {fileID: 724121567}
   - {fileID: 1287534332}
-  - {fileID: 718716734}
   m_Father: {fileID: 782669430}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7466,6 +7465,7 @@ Transform:
   - {fileID: 1273069621}
   - {fileID: 746506400}
   - {fileID: 1276771028}
+  - {fileID: 1182514997}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10084,7 +10084,7 @@ PrefabInstance:
     - target: {fileID: 8148520086773884159, guid: 0e8386331e5d9af4ea9455491b289c4f,
         type: 3}
       propertyPath: jumpHeight
-      value: 2
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8386331e5d9af4ea9455491b289c4f, type: 3}
@@ -11631,7 +11631,7 @@ Transform:
   - {fileID: 773875091}
   - {fileID: 715547425}
   m_Father: {fileID: 782669430}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1196413831
 GameObject:
@@ -12583,7 +12583,7 @@ Transform:
   m_Children:
   - {fileID: 1243030738}
   m_Father: {fileID: 782669430}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1287534331
 GameObject:
@@ -17723,14 +17723,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711425351}
-  m_LocalRotation: {x: 0.0010839059, y: 0.009485333, z: 0.113525085, w: 0.99348927}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.96, y: 0.30904007, z: 2.4099998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 534669905}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 1.0940001, z: 13.038001}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1725114889
 GameObject:
   m_ObjectHideFlags: 0
@@ -19223,9 +19223,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 335b4d8ead80cec4f8aea327e13e25ba, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.558
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

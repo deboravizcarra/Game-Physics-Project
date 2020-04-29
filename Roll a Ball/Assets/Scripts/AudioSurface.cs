@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 
 public class AudioManager : MonoBehaviour
 {
@@ -32,3 +31,4 @@ public class AudioManager : MonoBehaviour
     {
         audioSource.volume = 0f;
     }
+}
