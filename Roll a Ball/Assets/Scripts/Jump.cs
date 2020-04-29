@@ -4,23 +4,18 @@ using System.Collections;
 public class Jump : MonoBehaviour {
 
     private new Rigidbody rigidbody;
-    public float jumpHeight;
-    public GameObject ball;
+    public float jumpHeight = 20.0f;
+    public float jumpSpeed = 10.0f;
     
-    // Use this for initailization
     void Start() {
          rigidbody = GetComponent<Rigidbody>();
-}
-
-    // Update is called once per frame
+    }
+    
     void Update() {
         // jump if left mouse click is pressed
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown("space"))
         {
-            GetComponent<Rigidbody>().AddForce(Vector3.up * jumpHeight);
-            //ball.transform.position = jump;
+            rigidbody.AddForce(new Vector3(0, jumpHeight, 0) * jumpSpeed);
         }
-        //Vector3 gerak = new Vector3 ( 0, Input.GetAxis ("Vertical"));
-        //rigidbody.AddForce (gerak * jumpspeed);
     }
 }

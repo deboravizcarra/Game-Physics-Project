@@ -156,8 +156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8988a7a5066764a4eb6c803a1cde6de5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeight: 5
-  ball: {fileID: 0}
+  jumpHeight: 20
+  jumpSpeed: 10
 --- !u!114 &207416952424531610
 MonoBehaviour:
   m_ObjectHideFlags: 0

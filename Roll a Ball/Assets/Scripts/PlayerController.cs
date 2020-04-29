@@ -19,13 +19,12 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody rb;
     private int count;
-    private int stage;
+    public int stage = 1;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         count = 0;
-        stage = 1;
         SetStageText(stage);
         SetCountText();
         winText.text = "";
