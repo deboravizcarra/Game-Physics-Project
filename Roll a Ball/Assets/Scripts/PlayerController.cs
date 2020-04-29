@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody rb;
     private int count;
+    public int winCount = 0;
     public int stage = 1;
 
     void Start()
@@ -75,9 +76,9 @@ public class PlayerController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        if (count >= 12)
+        if (count >= winCount)
         {
-            winText.text = "You Win!";
+            winText.text = "Level Won!";
         }
     }
 }
